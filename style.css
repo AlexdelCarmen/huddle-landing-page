@@ -137,6 +137,51 @@ img {
 * End Vanilla CSS
 */
 
+:root {
+    /* Design widths */
+    --mobile-width: 375px; 
+    --desktop-width: 1440px;
+
+    /* Colors */
+    /* Primary */
+    --primary-color1: hsl(257, 40%, 49%); 
+    --primary-color2: hsl(300, 69%, 71%);
+    /* Neutral */
+    --neutral-color1: #ffffee;
+
+    /* Fonts */
+    --heading-font: 'Poppins', sans-serif;
+    --heading-normal: 400; 
+    --heading-bold: 600; 
+    --body-font: 'Open Sans', sans-serif;
+    --body-normal: 400; 
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#component {
+    background-image: url("./images/bg-mobile.svg");
+    background-color: var(--primary-color1);
+    max-width: var(--mobile-width);
+    padding: 2rem;
+}
+
+#logo {
+    width: 30%;
+    margin-bottom: 4rem;
+}
+
+#illustration {
+    
+}
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
