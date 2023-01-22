@@ -167,20 +167,46 @@ body {
 
 #component {
     background-image: url("./images/bg-mobile.svg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
     background-color: var(--primary-color1);
     max-width: var(--mobile-width);
-    padding: 2rem;
+    padding: 1rem;
+	display: flex;
+	flex-direction: column;
 }
 
 #logo {
-    width: 30%;
+    width: 40%;
     margin-bottom: 4rem;
 }
 
 #illustration {
-    
+	width: 80%;
+	margin: 0 auto; 
 }
 
+.component-text {
+	margin-top: 3rem;
+	text-align: center;
+	color: var(--neutral-color1);
+}
+
+.component-title {
+	font-family: var(--heading-font);
+	font-weight: var(--heading-bold);
+	font-size: 24px;
+	line-height: 40px;
+	padding: 0 2rem;
+}
+
+.component-paragraph {
+	font-family: var(--body-font);
+	font-size: 16px;
+	line-height: 26px;
+	padding: 0 2.2rem;
+}
 
 .attribution {
   font-size: 11px;
