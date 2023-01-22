@@ -283,10 +283,65 @@ body {
 	transition: all 0.3s;
 }
 
+.content-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media  only screen and (min-width: 1440px){
+	#component {
+		max-width: var(--desktop-width);
+		flex-direction: row;
+		background-image: url("./images/bg-desktop.svg");
+		background-size: contain;
+		min-height: 100%;
+	}
+	.img-wrapper  {
+		width: 100%;
+	}	
+
+	#illustration {
+		min-width: 130%;
+	}
+
+	.content-wrapper {
+		margin-left: 15rem;
+	}
+
+	.component-title{
+		text-align: left;
+		font-size: 48px;
+		line-height: 60px;
+		padding-right: 5rem;
+	}
+
+	.component-paragraph {
+		text-align: left;
+		font-size: 20px;
+		padding-right: 1rem;
+	}
+
+	#register-button {
+		align-self: flex-start;
+		margin-left: 2rem;
+		width: 35%;
+		font-size: 18px;
+		padding: 1rem 0;
+	}
+
+	.social-media {
+		margin-top: 8rem;
+		align-self: flex-end;
+		width: 20%;
+	}
 }
