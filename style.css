@@ -172,7 +172,7 @@ body {
 	background-position: center top;
     background-color: var(--primary-color1);
     max-width: var(--mobile-width);
-    padding: 1rem;
+    padding: 2rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -180,11 +180,14 @@ body {
 #logo {
     width: 40%;
     margin-bottom: 4rem;
+	display: block;
+	object-fit: cover;
 }
 
 #illustration {
-	width: 80%;
-	margin: 0 auto; 
+	width: 100%;
+	display: block;
+	object-fit: cover;	
 }
 
 .component-text {
@@ -207,6 +210,8 @@ body {
 	line-height: 26px;
 	padding: 0 2.2rem;
 }
+
+
 
 .attribution {
   font-size: 11px;
